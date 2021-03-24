@@ -19,6 +19,7 @@
   "homepage": "https://github.com/josiecl/Team-Awesome#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "handlebars": "^4.7.7",
