@@ -1,0 +1,20 @@
+{
+  "name": "team-awesome",
+  "version": "1.0.0",
+  "description": "Diary app, allows user to post pitures, text and other media entries.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josiecl/Team-Awesome.git"
+  },
+  "author": "Asli, Bao, Betiel, Josie, Melissa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josiecl/Team-Awesome/issues"
+  },
+  "homepage": "https://github.com/josiecl/Team-Awesome#readme"
+}
