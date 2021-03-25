@@ -24,6 +24,8 @@
     "express-handlebars": "^5.2.1",
     "handlebars": "^4.7.7",
     "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
     "sequelizer": "^1.1.4"
   }
 }
