@@ -1,0 +1,35 @@
+body {
+   background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-align: center;
+}   
+/* .center {
+    background-color: transparent;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    position: center;
+} */
+.topnav {
+   overflow: hidden;
+   background-color: transparent;
+   padding-top: 10px;
+   font-size: xx-large;
+}
+.topnav a {
+   float: right;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 24px;
+}
+/* .card{
+   position: left;
+}  
+.card a {
+   position: -webkit-sticky;
+} */
