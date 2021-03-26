@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
   
       const users = userData.map((user) => user.get({ plain: true }));
   
-      res.render('homepage', {
+      res.render('dashboard', {
         users,
         //logged in status
         logged_in: req.session.logged_in,
