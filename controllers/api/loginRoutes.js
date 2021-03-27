@@ -1,7 +1,7 @@
 //Requiring our router and adding user model
 const router = require('express').Router();
-const {User}= require('../models')
-const withAuth = require('../utils/auth');
+const {User}= require('../../models')
+const withAuth = require('../../utils/auth');
 
 //Get the login/signup page
 
