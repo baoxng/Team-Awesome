@@ -3,6 +3,16 @@ const router = require('express').Router();
 const {User}= require('../models')
 const withAuth = require('../utils/auth');
 
+//Get the login/signup page
+
+
+
+//Create post for new user
+
+
+
+
+//Find all user with the log in
 router.get('/', withAuth, async (req, res) => {
     try {
       const userData = await User.findAll({
@@ -12,7 +22,7 @@ router.get('/', withAuth, async (req, res) => {
   
       const users = userData.map((user) => user.get({ plain: true }));
   
-      res.render('dashboard', {
+      res.render('homepage', {
         users,
         //logged in status
         logged_in: req.session.logged_in,
@@ -32,4 +42,6 @@ router.get('/', withAuth, async (req, res) => {
     res.render('login');
   });
   
+  //Once user is logged in start a session
+
   module.exports = router;
