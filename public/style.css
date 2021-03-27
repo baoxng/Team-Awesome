@@ -1,0 +1,37 @@
+/* li {
+    font-size: 2rem;
+    width: 300px;
+    margin: 4px;
+    padding: 4px;
+    list-style: none
+}
+.midlaner {background-color: #ffea00}
+.toplaner {background-color: #eeeeee} */
+
+#body {
+    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+.bg-warning{
+    background-color: #fcdcd1 !important;
+}
+.heading-line-right{
+    background: white;
+height: 2px;
+width: 50%;
+float: right;
+display: block;
+}
+.heading-line-left{
+    background: white;
+height: 2px;
+width: 50%;
+float: left;
+display: block;
+}
+.half{
+    background: url('./assets/Dear_Diary_Logo.png') no-repeat center center fixed;
+}
