@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: .01em;
+	text-shadow: 2px 2px 2px #111;
+	color: #fff;
+	margin:10px;
+
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+h2, h3 {
+	color: rgb(0, 0, 0);
+}
+
+div {
+	float: left;
+	margin: 10px;
+}
+
+.btnPrimary{
+	background-color: #4496bc;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 100%;
+}
+
+.container img {
+	width: 100%;
+	height: auto;
+  }
+
+#loginContainer{
+	border:1px; 
+	padding:10px;
+	position: center;
+	background-color:white;
+	width: 75%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: inline-block;
+}
+
+#signupContainer{
+	border:1px; 
+	padding:10px;
+	position: center;
+	background-color:white;
+	width: 75%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: inline-block;
+}
+
+.loginLink{
+	color: #4496bc
+}
+
+.personalizedContainer{
+	padding:10px; 
+	width:100%;
+	float:left; 
+}
