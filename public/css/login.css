@@ -41,26 +41,31 @@ div {
 	width: 100%;
 }
 
-.imageContainer{
-	position: relative;	
-	width: 100%;
-	max-width: 400px;
-	background-image: url(../public/assets/backgroundImage.jpg) no-repeat center fixed;
-	background-size: cover;
-}
-
 .container img {
 	width: 100%;
 	height: auto;
   }
 
-.loginContainer{
+#loginContainer{
 	border:1px; 
-	padding:10px; 
-	width: 50%;
-	float:center; 
+	padding:10px;
 	position: center;
-	background-color:white
+	background-color:white;
+	width: 75%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: inline-block;
+}
+
+#signupContainer{
+	border:1px; 
+	padding:10px;
+	position: center;
+	background-color:white;
+	width: 75%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: inline-block;
 }
 
 .loginLink{
