@@ -2,7 +2,6 @@
 
 body {
 	font-family: "Roboto", Arial, sans-serif;
-	background-image: url(public\assets\backgroundImage.jpg);
 }
 
 h1 {
@@ -24,17 +23,9 @@ h2, h3 {
 	color: rgb(0, 0, 0);
 }
 
-.container, .lowerContainer{
-	width:100%;
-	background-color: red;
-	margin:0;
-	color:white;
-	padding:10px;
-}
 div {
-	float:left;
-	margin:10px;
-
+	float: left;
+	margin: 10px;
 }
 
 .btnPrimary{
@@ -48,14 +39,27 @@ div {
 	display: inline-block;
 	font-size: 16px;
 	width: 100%;
-  }
 }
+
+.imageContainer{
+	position: relative;	
+	width: 100%;
+	max-width: 400px;
+	background-image: url(../public/assets/backgroundImage.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+.container img {
+	width: 100%;
+	height: auto;
+  }
 
 .loginContainer{
 	border:1px; 
 	padding:10px; 
-	width:100%;
-	float:left; 
+	width: 50%;
+	float:center; 
+	position: center;
 	background-color:white
 }
 
