@@ -1,6 +1,13 @@
 const router = require('express').Router();
 const { User, Post } = require('../../models');
 
+router.get('/', async (req, res) => {
+  User.findAll({
+    include: [Post],
+  }).then(users => res.json(users))
+  .catch(err => res.status(500).json(err))
+})
+
 router.post('/', async (req, res) => {
   try {
     console.log("You are on logging page")
