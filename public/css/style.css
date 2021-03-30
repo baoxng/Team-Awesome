@@ -67,6 +67,19 @@ display: block;
     background-position: center center;
     background-size: cover;
 }
+#modalBtn{
+	background-color: #4496bc;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	padding: auto;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	width: 100%;
+    margin: 5px;
+}
 .ruler{
     width: 75px;
     height: 5px;
