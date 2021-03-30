@@ -16,7 +16,17 @@
     -o-background-size: cover;
   }
 .bg-warning{
-    background-color: #fcdcd1 !important;
+    background-color: #c2c2c2 !important;
+}
+#entryBtn{
+    background-color: #4496bc;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
 }
 .heading-line-right{
     background: white;
