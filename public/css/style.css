@@ -80,6 +80,9 @@ display: block;
 	width: 100%;
     margin: 5px;
 }
+#diaryContainer{
+    margin-top: 50px;
+}
 .ruler{
     width: 75px;
     height: 5px;
