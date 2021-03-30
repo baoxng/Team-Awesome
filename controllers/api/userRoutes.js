@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { User, Post } = require('../../models');
+const withAuth = require('../../utils/auth');
+
 
 router.get('/', async (req, res) => {
   User.findAll({
@@ -26,6 +28,7 @@ router.post('/', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
+    console.log("you have made it to the api/user/login")
     const userData = await User.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
@@ -55,6 +58,28 @@ router.post('/login', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.get('/dashboard', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    console.log("you have made it to the dashboard")
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Post }],
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render('dashboard', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
