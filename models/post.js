@@ -11,17 +11,20 @@ Post.init(
         primaryKey: true,
         autoIncrement: true,
       },
-      name: {
+      date: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      title: {
         type: DataTypes.STRING,
         allowNull: false,
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
       },
-      date_created: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        defaultValue: DataTypes.NOW,
+      image: {
+        type: DataTypes.STRING,
+        allowNull: true,
       },
       user_id: {
         type: DataTypes.INTEGER,

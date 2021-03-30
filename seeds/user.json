@@ -1,11 +1,15 @@
 [
     {
-        "name": "cat",
+        "firstName": "Kat",
+        "lastName": "Meow",
+        "userName": "kmeow1",
         "email": "email@gmail.com",
         "password": "1password"
     },
     {
-        "name": "dog",
+        "firstName": "Doug",
+        "lastName" : "Roof",
+        "userName": "droof2",
         "email": "2email@gmail.com",
         "password": "2password"
     }
