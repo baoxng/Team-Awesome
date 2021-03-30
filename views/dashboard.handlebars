@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light ">
+<div class="navBackground">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container py-3">
     <a class="navbar-brand" href="#"><span class="navigation-log text-white">DEAR</span><span class="navigation-log text-white">DIARY</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,10 +8,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto ">
       <li class="nav-item active">
-        <a class="nav-link text-white" href="#">HOME </a>
+        <a class="nav-link text-white" href="/">HOME </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">ARCHIVE</a>
+        <a class="nav-link text-white" href="/dashboard">DASHBOARD</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" href="#">LOGOUT</a>
@@ -19,15 +20,8 @@
     </ul>
   </div>
   </div>
-  
 </nav>
-
-
-
-
-
-
-
+</div>
 
 <body>
   <section>
@@ -38,28 +32,28 @@
           <hr class="bg-white pt-1">
         </div>
         <div class="col-2">
-          <button class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW ENTRY</button>
+          <button id="entryBtn" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW ENTRY</button>
         </div>
       </div>
     </div>
   </section>
   
-  <section>
-    <div class="container">
+ <section>
+    <div id="diaryContainer" class="container">
       <div class="row my-1">
-        <div class="col-6 ">
+        <div class="col-md-6">
           <img class="img-fluid"
-            src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg" alt="">
+            src="https://i.ibb.co/TBHrZmD/duluth-ice.png" alt="duluth-ice">
         </div>
-        <div class="col-3 ">
-          <div class="d-block bg-dark w-100 h-100"></div>
+        <div class="col-sm-3">
+          <div class="d-block bg-secondary w-100 h-100"></div>
         </div>
-        <div class="col-3">
-          <div class="d-block bg-dark w-100 h-100"></div>
+        <div class="col-sm-3">
+          <div class="d-block bg-secondary w-100 h-100"></div>
         </div>
       </div>
 
-      <div class="row my-1">
+      {{!-- <div class="row my-1">
         <div class="col-3 half ">
           <div class="d-block bg-dark w-100 h-100"></div>
         </div>
@@ -87,7 +81,7 @@
           <div class="d-block bg-dark w-100 h-100"></div>
         </div>
       </div>
-  </section>
+  </section> --}}
 
   
 
@@ -115,7 +109,7 @@
       </div>
       <div class="modal-footer">
         
-        <button type="button" class="btn btn-danger btn-block py-2 mb-3">Submit</button>
+        <button type="button" id="modalBtn" class="btn btn-danger btn-block py-2 mb-3">Submit</button>
       </div>
     </div>
   </div>

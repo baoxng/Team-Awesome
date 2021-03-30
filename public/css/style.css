@@ -15,8 +15,24 @@
     background-size: cover;
     -o-background-size: cover;
   }
+.nav-item{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 25px;
+}
 .bg-warning{
-    background-color: #fcdcd1 !important;
+    background-color: #c2c2c2 !important;
+}
+#entryBtn{
+    background-color: #4496bc;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
 }
 .heading-line-right{
     background: white;
@@ -40,9 +56,32 @@ display: block;
 .navigation-log{
     border: white 4px solid;
     padding: 5px 15px 5px 15px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 25px;
 }
-nav{
-    background: url('http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.s2014.png') center center fixed;
+.navBackground{
+    background-image: url('https://i.ibb.co/G0T29y5/background-Image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#modalBtn{
+	background-color: #4496bc;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	padding: auto;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	width: 100%;
+    margin: 5px;
+}
+#diaryContainer{
+    margin-top: 50px;
 }
 .ruler{
     width: 75px;
