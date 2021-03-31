@@ -98,17 +98,16 @@ display: block;
 	margin-top: 20px;
 }
 .postBtn{
-	background-color: #4496bc;
 	border: none;
 	border-radius: 6px;
-	color: white;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 20px;
-	width: 100%;
+	font-size: 25px;
+	font-weight: bolder;
+	width: 80%;
     margin: 5px;  
-	padding: 10px;
+	padding: 15px;
 }
 .ruler{
     width: 75px;
@@ -126,7 +125,7 @@ body {
 	text-align: center;
 }
 .card {
-	margin-top: 5%;
+	margin-top: 3%;
 	margin-left: 20%;
 	margin-right: 20%;
 	display: inline-block;

@@ -13,12 +13,8 @@
             <a class="nav-link text-white" href="/">HOME </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/api/users/dashboard">DASHBOARD</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link text-white logout" href="#">LOGOUT</a>
           </li>
-
         </ul>
       </div>
     </div>
@@ -29,7 +25,6 @@
   <div class="container-fluid">
     <div class="row bg-warning py-3 ">
       <div class="col-10 pl-0">
-
         <hr class="bg-white pt-1">
       </div>
       <div class="col-2">
@@ -37,6 +32,7 @@
       </div>
     </div>
 
+<!-- Post Container -->
     <section class="card" align="center" style="width: 50%;">
       {{#each posts as |post| }}
       <div id="card-header">
@@ -47,7 +43,6 @@
       </div>
       {{/each}}
     </section>
-
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
