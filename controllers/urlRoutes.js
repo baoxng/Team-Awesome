@@ -33,8 +33,11 @@ router.get('/login', async(req, res) => {
 //   }
 });
 
-router.get('/dashboard', async (req, res) =>{
+router.get('/dashboard/:id', withAuth, async (req, res) =>{
   try{
+    const postData = await Post.findAll({where:{user_id: req.params.id}})
+    console.log("post data success", postData);
+
   res.render('dashboard');
   }
   catch(err){

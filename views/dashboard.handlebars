@@ -24,7 +24,6 @@
 </div>
 
 <body>
-  <section>
     <div class="container-fluid">
       <div class="row bg-warning py-3 ">
         <div class="col-10 pl-0">
@@ -35,26 +34,24 @@
           <button id="entryBtn" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW ENTRY</button>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Loop over each object in the projects array -->
-{{#each posts as |entry| }}
-<div class="row mb-4">
+  <!-- Loop over each object in the post -->
+<div class="row">
+{{#each posts as |post| }}
   <div class="col-md-5">
     <h2>
-      <a href="/entry/:id{{post.id}}">{{entry.title}}</a>
+      <a href="/post/:id{{title}}">{{post.title}}</a>
     </h2>
-    <p>Created on {{format_date entry.date}}</p>
+    <p>Created on {{post.date}}</p>
   </div>
   <div class="col-md-7">
     <p>
       {{post.description}}
     </p>
   </div>
-</div>
 {{/each}}
-  
+</div>
+</div> 
  {{!-- <section>
     <div id="diaryContainer" class="container">
       <div class="row my-1">
