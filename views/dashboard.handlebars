@@ -1,81 +1,86 @@
 <div class="navBackground">
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container py-3">
-    <a class="navbar-brand" href="#"><span class="navigation-log text-white">DEAR</span><span class="navigation-log text-white">DIARY</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto ">
-      <li class="nav-item active">
-        <a class="nav-link text-white" href="/">HOME </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="/api/users/dashboard">DASHBOARD</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white logout" href="#">LOGOUT</a>
-      </li>
-     
-    </ul>
-  </div>
-  </div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container py-3">
+      <a class="navbar-brand" href="#"><span class="navigation-log text-white">DEAR</span><span
+          class="navigation-log text-white">DIARY</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/">HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/api/users/dashboard">DASHBOARD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white logout" href="#">LOGOUT</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
 
 <body>
-    <div class="container-fluid">
-      <div class="row bg-warning py-3 ">
-        <div class="col-10 pl-0">
+  <div class="container-fluid">
+    <div class="row bg-warning py-3 ">
+      <div class="col-10 pl-0">
 
-          <hr class="bg-white pt-1">
-        </div>
-        <div class="col-2">
-          <button id="entryBtn" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW ENTRY</button>
-        </div>
+        <hr class="bg-white pt-1">
       </div>
-
-  <!-- Loop over each object in the post -->
-<div id="postDashboard" class="row">
-{{#each posts as |post| }}
-  <div class="col-md-6">
-    <h2>
-      <a href="/api/post/{{post.id}}">{{post.title}}</a>
-    </h2>
-    <p>Created on {{post.date}}</p>
-{{/each}}
-</div>
-</div> 
-
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Select the date</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            
-            <input type="date" class="form-control py-4 text-center" placeholder="Start journaling...">
-          </div>
-         <div class="form-group">
-            
-            <textarea class="form-control py-4 text-center" placeholder="Start journaling"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-danger btn-block py-2 mb-3">Submit</button>
+      <div class="col-2">
+        <button id="entryBtn" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW ENTRY</button>
       </div>
     </div>
-  </div>
-</div>    
 
-<script src="/js/logout.js"></script>
+    <section class="card" align="center" style="width: 50%;">
+      {{#each posts as |post| }}
+      <div id="card-header">
+        <a href="/api/post/{{post.id}}">{{post.title}}</a>
+      </div>
+      <div class="card-body">
+        <p>Created on {{post.date}}</p>
+      </div>
+      {{/each}}
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Select the date</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+
+                <input type="date" class="form-control py-4 text-center" placeholder="Start journaling...">
+              </div>
+              <div class="form-group">
+
+                <textarea class="form-control py-4 text-center" placeholder="Start journaling"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-danger btn-block py-2 mb-3">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/logout.js"></script>
+    {{!--
+    <script src="/js/dashboard.js"></script> --}}
 </body>

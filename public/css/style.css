@@ -8,6 +8,8 @@
 .midlaner {background-color: #ffea00}
 .toplaner {background-color: #eeeeee} */
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
 #body {
     background: url('https://i.ibb.co/G0T29y5/background-Image.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -24,7 +26,6 @@
 .bg-warning{
     background-color: #c2c2c2 !important;
 }
-
 #entryBtn{
     background-color: #4496bc;
 	border: none;
@@ -49,7 +50,6 @@ width: 50%;
 float: left;
 display: block;
 }
-
 .home-logo{
     border: white 8px solid;
     font-size: 68px;
@@ -68,11 +68,6 @@ display: block;
     background-position: center center;
     background-size: cover;
 }
-/* #modal{
-    position: right; 
-   
-  
-} */
 #modalBtn{
 	background-color: #4496bc;
 	border: none;
@@ -84,13 +79,36 @@ display: block;
 	display: inline-block;
 	font-size: 20px;
 	width: 100%;
-    margin: 5px;
-    
+    margin: 5px;  
 }
 #diaryContainer{
     margin-top: 50px;
-   
-    
+}
+#postDashboard{
+	width: 50%;
+	float: right;
+}
+#postContainer {
+	display: flex;
+	flex-flow: column wrap;
+	align-content: flex-start;
+	align-items: center;
+	background-color: tomato;
+	min-height: 200px;
+	margin-top: 20px;
+}
+.postBtn{
+	background-color: #4496bc;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	width: 100%;
+    margin: 5px;  
+	padding: 10px;
 }
 .ruler{
     width: 75px;
@@ -98,21 +116,32 @@ display: block;
     display: inline-block;
     background-color: white;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-
 body {
-    font-family: "Roboto", Arial, sans-serif;
-   
+    font-family: "Roboto", Arial, sans-serif; 
 }
-
 .formHeader {
 	color: #969696;
 	letter-spacing: 3px;
 	font-weight: lighter;
 	text-align: center;
 }
-
+.card {
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	display: inline-block;
+	padding:20px;
+}
+#card-header{
+	color: white;
+	background-color: #4496bc;
+	margin: 10px;
+	border-radius: 6px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+}
 .btnPrimary{
 	background-color: #4496bc;
 	border: none;
@@ -127,7 +156,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 #loginContainer{
 	border: none;
 	border-radius: 10px;
@@ -140,7 +168,6 @@ body {
  	margin-right: 25%;
  	display: inline-block;
 }
-
 #signupContainer{ 
 	padding: 50px;
 	border: none;
@@ -153,11 +180,9 @@ body {
  	margin-right: 25%;
  	display: inline-block;
 }
-
 .loginLink{
 	color: #4496bc
 }
-
 .personalizedContainer{
 	padding:10px; 
 	width:100%;

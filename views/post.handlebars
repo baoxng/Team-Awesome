@@ -1,7 +1,51 @@
+<div class="navBackground">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container py-3">
+            <a class="navbar-brand" href="#"><span class="navigation-log text-white">DEAR</span><span
+                    class="navigation-log text-white">DIARY</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="/">HOME </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/api/users/dashboard">DASHBOARD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white logout" href="#">LOGOUT</a>
+                    </li>
 
-<div class="single-entry" style="display: block">
-    <h2>{{date}}</h2>
-    <img src="/images/{{image}}" style="width:300px;"><br>
-    <h2>{{title}} {{description}}</h2>
-    <h3><a href="/api/users/dashboard" class="loginLink">Back to Diary</a></h3>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </div>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-warning py-3 ">
+            <div class="col-10 pl-0">
+
+                <hr class="bg-white pt-1">
+            </div>
+            <div class="col-2">
+                <button id="entryBtn" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW
+                    ENTRY</button>
+            </div>
+        </div>
+
+<section class="card" align="center" style="width: 50%;">
+    <div class="single-entry" style="display: block">
+        <h2>Created on {{date}}</h2>
+        <br>
+        <img src="https://i.ibb.co/TBHrZmD/duluth-ice.png" alt="duluth-ice" style="width:80%;"><br>
+        <br>
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <button class="postBtn"><a href="/api/users/dashboard" class="loginLink">Back to Diary</a></button>
+    </div>
+</section>
