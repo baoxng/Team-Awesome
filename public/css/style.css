@@ -68,12 +68,11 @@ display: block;
     background-position: center center;
     background-size: cover;
 }
-/* #modal{
-    overflow:auto;
-  max-height:calc(100vh - 125px);
+#modal{
+    position: right; 
    
   
-} */
+}
 #modalBtn{
 	background-color: #4496bc;
 	border: none;
