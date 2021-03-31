@@ -15,9 +15,9 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/api/users/dashboard');
       } else {
-        alert(response.statusText);
+        alert("User already exists; try again");
       }
     }
   };

@@ -12,6 +12,11 @@ router.get('/', async (req, res) => {
 
 router.get('/signup', async (req, res) =>{
   try{
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/api/users/dashboard');
+      return;
+    }
     res.render('signup');
   }
   catch(err){
@@ -21,16 +26,18 @@ router.get('/signup', async (req, res) =>{
 
 router.get('/login', async(req, res) => {
   try{
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/api/users/dashboard');
+      return;
+    }
     res.render('login');
   }
   catch(err){
     res.status(500).json(err)
   }
-  // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/dashboard');
-//     return;
-//   }
+  
+
 });
 
 router.get('/dashboard/:id', withAuth, async (req, res) =>{
