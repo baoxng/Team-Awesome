@@ -24,6 +24,7 @@
 .bg-warning{
     background-color: #c2c2c2 !important;
 }
+
 #entryBtn{
     background-color: #4496bc;
 	border: none;
@@ -33,7 +34,7 @@
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-}
+}   
 .heading-line-right{
     background: white;
 height: 2px;
@@ -67,6 +68,12 @@ display: block;
     background-position: center center;
     background-size: cover;
 }
+/* #modal{
+    overflow:auto;
+  max-height:calc(100vh - 125px);
+   
+  
+} */
 #modalBtn{
 	background-color: #4496bc;
 	border: none;
@@ -79,9 +86,12 @@ display: block;
 	font-size: 20px;
 	width: 100%;
     margin: 5px;
+    
 }
 #diaryContainer{
     margin-top: 50px;
+   
+    
 }
 .ruler{
     width: 75px;
@@ -93,7 +103,8 @@ display: block;
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
 body {
-	font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
+   
 }
 
 .formHeader {
