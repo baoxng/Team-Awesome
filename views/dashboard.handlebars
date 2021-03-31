@@ -11,10 +11,10 @@
         <a class="nav-link text-white" href="/">HOME </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="/dashboard">DASHBOARD</a>
+        <a class="nav-link text-white" href="/api/users/dashboard">DASHBOARD</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">LOGOUT</a>
+        <a class="nav-link text-white logout" href="#">LOGOUT</a>
       </li>
      
     </ul>
@@ -36,19 +36,13 @@
       </div>
 
   <!-- Loop over each object in the post -->
-<div class="row">
+<div id="postDashboard" class="row">
 {{#each posts as |post| }}
-  <div class="col-md-5">
+  <div class="col-md-6">
     <h2>
-      <a href="/post/:id{{title}}">{{post.title}}</a>
+      <a href="/api/post/{{post.id}}">{{post.title}}</a>
     </h2>
     <p>Created on {{post.date}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{post.description}}
-    </p>
-  </div>
 {{/each}}
 </div>
 </div> 
@@ -96,4 +90,5 @@
     </div>
   </div>
 </div>
+<script src="/js/logout.js"></script>
 </body>
