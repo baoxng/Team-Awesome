@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/josiecl/Team-Awesome#readme",
   "dependencies": {
+    "accessibility": "^3.0.13",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "connect-session-sequelize": "^7.1.1",
@@ -27,6 +28,7 @@
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
     "handlebars": "^4.7.7",
+    "inspirational-quotes": "^1.0.8",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2",
