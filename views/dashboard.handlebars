@@ -26,13 +26,10 @@
 
 </div>
     <div class="container-fluid">
-      <div class="row bg-warning py-3 ">
-        <div class="col-10 pl-0">
-
-          <hr class="bg-white pt-1">
-        </div>
-        <div class="col-2">
-          <button id="entryBtn" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">NEW ENTRY</button>
+      <div class="row py-3 ">
+        <div class="col-2"></div>
+        <div class="col-7" >
+          <button id="entryBtn" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" >NEW ENTRY</button>
         </div>
       </div>
     </div>
@@ -45,7 +42,7 @@
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name your entry">
   </div>
   <div class="form-group">
-    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="date">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="date">
   </div>
   <div class="form-group">
     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="how was your day?" rows="10"></textarea>
@@ -53,6 +50,9 @@
   <div class="form-group">
     <label for="exampleFormControlFile1">Do you want to attach an image?</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+  <div class="form-group">
+    <button type="button" class="btn btn-primary btn-block py-2 mb-3">Submit</button>
   </div>
 </section>
 
@@ -101,7 +101,7 @@
           </div>
           <div class="modal-footer">
 
-            <button type="button" class="btn btn-danger btn-block py-2 mb-3">Submit</button>
+            <button type="button" class="btn btn-primary btn-block py-2 mb-3">Submit</button>
           </div>
         </div>
       </div>
