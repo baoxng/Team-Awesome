@@ -7,7 +7,7 @@ const postFormHandler = async (event) => {
     event.preventDefault();
   
     // Collect values from the new diary entry form
-    const title = document.querySelector('#post-email').value.trim();
+    const title = document.querySelector('#post-title').value.trim();
     const date = document.querySelector('#post-date').value.trim();
     const description = document.querySelector('#post-description').value.trim();
   

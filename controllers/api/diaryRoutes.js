@@ -46,8 +46,6 @@ router.get('/', async(req, res)=> {
     }
   });
 
-<<<<<<< HEAD
-=======
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -60,7 +58,6 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
->>>>>>> bcc20f72465acf1e59f42e55d9b37fa18989c691
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.destroy({
