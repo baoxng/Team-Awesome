@@ -13,12 +13,13 @@ const postFormHandler = async (event) => {
   
     if (title && date && description) {
       // Send a POST request to the API endpoint;
-      const response = await fetch('/api/post/', {
+      console.log("before post");
+      const response = await fetch('/api/post/create', {
         method: 'POST',
-        body: JSON.stringify({ date, title, description, image, user_id}),
+        body: JSON.stringify({ date, title, description}),
         headers: { 'Content-Type': 'application/json' },
       });
-  
+  console.log(response);
       if (response.ok) {
         console.log("this worked");
         // If successful, redirect the browser to the dashboard page
