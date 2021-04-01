@@ -1,4 +1,4 @@
-document.querySelector('#post-form').onclick = function() {
+document.querySelector('#entryBtn').onclick = function() {
     console.log("linked correctly to hdb");
 }
 
