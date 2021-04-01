@@ -211,3 +211,10 @@ body {
     object-fit: cover;
 }
 
+#inspo {
+	text-align: center;
+	color: white;
+	font-style: italic;
+	margin-left: 20px;
+	margin-top: 15px;
+}
