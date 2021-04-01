@@ -61,14 +61,19 @@
 	padding:20px;
 }
 #entryBtn{
-    background-color: #4496bc;
+	background-color:#c2c2c2;
 	border: none;
 	border-radius: 6px;
 	color: white;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
+	width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 }   
 .heading-line-right{
     background: white;

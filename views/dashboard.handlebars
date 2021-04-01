@@ -60,7 +60,7 @@
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
           </div> --}}
           <div class="form-group">
-            <button type="button" class="btn btn-primary btn-block py-2 mb-3">Submit</button>
+            <button id="entryBtn" type="submit">create a new entry</button>
           </div>
         </div>
       </div>
@@ -70,6 +70,8 @@
         <!-- Post Container -->
           <h2 class="formHeader">MY DIARY ENTRIES</h2>
           <br>
+          <hr class="bg-lighter">
+          <br>
           {{#each posts as |post| }}
           <div id="card-header">
             <a href="/api/post/{{post.id}}">{{post.title}}</a>
@@ -77,6 +79,8 @@
           <div class="card-body">
             <p>Created on {{post.date}}</p>
           </div>
+          <hr class="bg-lighter">
+          <br>
           {{/each}}
       </div>
     </div>
