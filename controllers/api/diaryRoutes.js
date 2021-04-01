@@ -80,4 +80,7 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
+// saving new diary entry to database
+
+
 module.exports = router;

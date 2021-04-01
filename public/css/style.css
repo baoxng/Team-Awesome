@@ -26,6 +26,18 @@
 .bg-warning{
     background-color: #c2c2c2 !important;
 }
+#animate-header{
+	color: white;
+	letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 25px;
+}
+.body-container{
+	margin-top: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding:20px;
+}
 #entryBtn{
     background-color: #4496bc;
 	border: none;
