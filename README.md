@@ -5,6 +5,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributors](#contributors)
+* [Link](#link)
 * [Screenshots](#screenshots)
 
 ## Description
@@ -30,6 +31,9 @@ Back end:
 * [Bao Xiong](https://github.com/baoxng)
 
 * [Josie Collins](https://github.com/josiecl)
+
+## Link
+[Deployed App](https://team-awesome-project2.herokuapp.com/)
 
 ## Screenshots
 ![Homepage](https://user-images.githubusercontent.com/74507818/113356141-73b18500-9307-11eb-8d32-6c0d4c90b877.PNG)
