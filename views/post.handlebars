@@ -1,63 +1,15 @@
 <div class="navBackground">
     <nav class="navbar navbar-expand-lg navbar-light">
-
-
-
-
-
-    <div class="container py-3">
-        <a class="navbar-brand" href="/api/users/dashboard"><span class="navigation-log text-white">DEAR</span><span class="navigation-log text-white">DIARY</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto ">
-        <li class="nav-item active">
-            <a class="nav-link text-white" href="/">HOME </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="/api/users/dashboard">DASHBOARD</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white logout" href="#">LOGOUT</a>
-        </li>
-        
-        </ul>
-    </div>
-    </div>
-    </nav>
-</div>
-
-
-<div class="card post-card">
-  <div class="card-body">
-      <h2>{{title}}</h2>
-    <small><b>{{date}}</b></small></br>
-    {{!-- <img class="card-img-top" src="/images/{{image}}" alt="Card image cap" style="padding:10px; width=300px"> --}}
-    <img class="card-img-top post-card-image" src={{image}}
-        {{!-- src="https://photos.smugmug.com/Ultra-high-res-panorama-prints/i-xgM8JzF/0/2c85caf2/L/Golden%20Gate%20Bridge%20Sundown%20Multi-Row%20%28low-res%29-L.jpg"  --}}
-        alt="Card image cap" style="padding:10px; width=300px">
-    <p class="card-text post-card-text"> {{description}}</p>
-  </div>
-</div>
-
-<footer class="posts-page-footer">
-    <h3><a href="/api/users/dashboard" class="loginLink card-link">Back to Diary</a></h3>
-</footer>
-
-
-
-
-
-
-
         <div class="container py-3">
-            <a class="navbar-brand" href="#"><span class="navigation-log text-white">DEAR</span><span
+            <a class="navbar-brand" href="/api/users/dashboard"><span class="navigation-log text-white">DEAR</span><span
                     class="navigation-log text-white">DIARY</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <p id="inspo" class="animate__animated animate__fadeInDown animate__slower">
+                "Always believe something wonderful is about to happen"
+          </p>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item active">
@@ -69,12 +21,37 @@
                     <li class="nav-item">
                         <a class="nav-link text-white logout" href="#">LOGOUT</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 </div>
 
+<div class="container-fluid">
+    <div class="row bg-warning py-3 ">
+        <div class="col-9 pl-0">
+            <hr class="bg-white pt-1">
+        </div>
+        <div class="col-2">
+            <h2 id="animate-header" class="formHeader animate__animated animate__fadeInLeftBig animate__slower">
+            hello again {{userName}}
+            </h2>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="single-entry" style="display: block">
+                <h2>{{title}}</h2>
+                <small><b>{{date}}</b></small><br>
+                <br>
+                <p class="card-text post-card-text"> {{description}}</p>
+                <h3><a href="/api/users/dashboard" class="loginLink">Back to Diary</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="/js/logout.js"></script>

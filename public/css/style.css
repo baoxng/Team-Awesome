@@ -34,8 +34,30 @@
 }
 .body-container{
 	margin-top: 2%;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 7%;
+	margin-right: 7%;
+	padding:20px;
+}
+#new-entry-container{
+	background-color: #4496bc;
+	padding:20px;
+	padding-top: 40px;
+	border-radius: 10px;
+}
+#all-entry-container{
+	padding:20px;
+	padding-top: 40px;
+	border: #c2c2c2;
+	border-radius: 10px;
+}
+.single-entry{
+	padding:20px;
+	padding-top: 40px;
+	border: #c2c2c2;
+	border-radius: 10px;
+	margin-top: 2%;
+	margin-left: 7%;
+	margin-right: 7%;
 	padding:20px;
 }
 #entryBtn{
@@ -132,6 +154,12 @@ body {
 }
 .formHeader {
 	color: #969696;
+	letter-spacing: 3px;
+	font-weight: lighter;
+	text-align: center;
+}
+.form-header {
+	color: white;
 	letter-spacing: 3px;
 	font-weight: lighter;
 	text-align: center;
