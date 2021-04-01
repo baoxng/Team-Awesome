@@ -1,5 +1,5 @@
 document.querySelector('#post-form').onclick = function() {
-    console.log("linked");
+    console.log("linked correctly to hdb");
 }
 
 const postFormHandler = async (event) => {
@@ -11,10 +11,10 @@ const postFormHandler = async (event) => {
     const description = document.querySelector('#post-description').value.trim();
   
     if (title && date && description) {
-      // Send a POST request to the API endpoint
+      // Send a POST request to the API endpoint;
       const response = await fetch('/api/post/', {
         method: 'POST',
-        body: JSON.stringify({ title, date, description }),
+        body: JSON.stringify({ date, title, description, image, user_id}),
         headers: { 'Content-Type': 'application/json' },
       });
   
