@@ -30,3 +30,14 @@ Back end:
 * [Bao Xiong](https://github.com/baoxng)
 
 * [Josie Collins](https://github.com/josiecl)
+
+## Screenshots
+![Homepage](https://user-images.githubusercontent.com/74507818/113356141-73b18500-9307-11eb-8d32-6c0d4c90b877.PNG)
+
+![Login](https://user-images.githubusercontent.com/74507818/113356143-744a1b80-9307-11eb-9616-b485965052fc.PNG)
+
+![Dashboard](https://user-images.githubusercontent.com/74507818/113356148-74e2b200-9307-11eb-9d1e-9131aab5ab10.PNG)
+
+![Diary Post](https://user-images.githubusercontent.com/74507818/113356137-7318ee80-9307-11eb-9d8c-e87cdd542d53.PNG)
+
+![Sign-up Form](https://user-images.githubusercontent.com/74507818/113356139-73b18500-9307-11eb-8211-02eefdcf2f0e.PNG)
