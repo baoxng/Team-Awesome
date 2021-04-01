@@ -15,6 +15,7 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        console.log("this worked");
         document.location.replace('/api/users/dashboard');
       } else {
         alert("User already exists; try again");
