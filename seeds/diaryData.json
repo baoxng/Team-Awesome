@@ -3,22 +3,29 @@
       "date": "March 20, 2021",
       "title": "Today was Bad",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image": "utah-one.jpg",
+      "image": "https://miro.medium.com/max/1000/0*dBpxT5Mbz2zujJ0y.",
       "user_id": "1"
     },
     {
         "date": "March 20, 2021",
-        "title": "Today was Bad",
+        "title": "Today was Good",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "image": "utah-one.jpg",
-        "user_id": "1"
+        "user_id": "https://mymodernmet.com/wp/wp-content/uploads/archive/MMrOYLHkiZd3eEoAvT-O_1082083017.jpeg"
     },
     {
         "date": "March 20, 2021",
         "title": "Today was Bad",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "utah-one.jpg",
+        "image": "https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "user_id": "2"
-    }
+    },
+    {
+      "date": "March 31, 2021",
+      "title": "Starry Night",
+      "description": "Starry night sky, made me miss going out and adventuring through the quiet forest. I can remember that day clearly, when the rain tickled my nose and the wet moss seeped through my toes. I was thrilled to see so many comets fly across the clear night sky. I made a wish that day, although I had forgetton about. Today reminded me, how little I was in this universe. Fin.",
+      "image": "https://starregister.org/images/starsBg-wide.jpg",
+      "user_id": "2"
+  }
   ]
   
