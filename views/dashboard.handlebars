@@ -37,7 +37,7 @@
     </div>
   </div>
 
-<!-- Body Container -->
+  <!-- Body Container -->
   <div class="body-container">
     <div class="row">
       <div id="new-entry-container" class="col-md-6">
@@ -65,23 +65,23 @@
         </div>
       </div>
       <div class="col-sm-1">
-    </div>
+      </div>
       <div id="all-entry-container" class="col-sm-4">
         <!-- Post Container -->
-          <h2 class="formHeader">MY DIARY ENTRIES</h2>
-          <br>
-          <hr class="bg-lighter">
-          <br>
-          {{#each posts as |post| }}
-          <div id="card-header">
-            <a href="/api/post/{{post.id}}">{{post.title}}</a>
-          </div>
-          <div class="card-body">
-            <p>Created on {{post.date}}</p>
-          </div>
-          <hr class="bg-lighter">
-          <br>
-          {{/each}}
+        <h2 class="formHeader">MY DIARY ENTRIES</h2>
+        <br>
+        <hr class="bg-lighter">
+        <br>
+        {{#each posts as |post| }}
+        <div id="card-header">
+          <a href="/api/post/{{post.id}}">{{post.title}}</a>
+        </div>
+        <div class="card-body">
+          <p>Created on {{post.date}}</p>
+        </div>
+        <hr class="bg-lighter">
+        <br>
+        {{/each}}
       </div>
     </div>
   </div>
@@ -124,6 +124,14 @@
       </div>
     </div> --}}
 </body>
+
+<footer>
+  <div class="col footer-container">
+    <center>
+      Created by Josie Collins, Bao Xiong, Melissa Hoang, Betiel Habtemariam, Asli Farah
+    </center>
+  </div>
+</footer>
 
 <script src="/js/logout.js"></script>
 <script src="/js/dashboard.js"></script>

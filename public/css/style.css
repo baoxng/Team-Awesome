@@ -263,3 +263,9 @@ body {
 	margin-left: 20px;
 	margin-top: 15px;
 }
+.footer-container{
+	background-color: rgb(243, 243, 243);
+	padding: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
