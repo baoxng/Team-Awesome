@@ -93,6 +93,7 @@ router.post('/', withAuth, async (req, res) => {
 
 router.get('/:id', withAuth, async (req, res) => {
   try {
+    // Find the logged in user based on the session ID
     console.log("you have made it to this point")
     const postData = await Post.findByPk(req.params.id, {
       include: [
@@ -107,9 +108,8 @@ router.get('/:id', withAuth, async (req, res) => {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Post }],
-    });
-    
-    console.log(postData.dataValues.posts);
+    });    
+    console.log(userData.dataValues.posts);
     res.render('dashboard', {
       ...post,
       logged_in: true

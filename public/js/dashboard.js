@@ -1,3 +1,7 @@
+document.querySelector('#post-form').onclick = function() {
+    console.log("linked");
+}
+
 const postFormHandler = async (event) => {
     event.preventDefault();
   
@@ -8,7 +12,7 @@ const postFormHandler = async (event) => {
   
     if (title && date && description) {
       // Send a POST request to the API endpoint
-      const response = await fetch('/api/post/:id', {
+      const response = await fetch('/api/post/', {
         method: 'POST',
         body: JSON.stringify({ title, date, description }),
         headers: { 'Content-Type': 'application/json' },

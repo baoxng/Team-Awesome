@@ -45,16 +45,16 @@
         <div id="post-form" class="container-fluid">
           <h2 class="form-header">NEW DIARY ENTRY</h2>
           <br>
-          <form class="form-group">
+          <div class="form-group">
             <input type="email" id="post-email" class="form-control" id="exampleFormControlInput1"
               placeholder="name your entry">
-          </form>
-          <form class="form-group">
+          </div>
+          <div class="form-group">
             <input type="date" id="post-date" class="form-control" id="exampleFormControlInput1" placeholder="date">
-          </form>
-          <form class="form-group">
+          </div>
+          <div class="form-group">
             <textarea class="form-control" id="post-description" placeholder="how was your day?" rows="18"></textarea>
-          </form>
+          </div>
           {{!-- <div class="form-group">
             <label for="exampleFormControlFile1">Do you want to attach an image?</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -134,4 +134,4 @@
 </footer>
 
 <script src="/js/logout.js"></script>
-<script src="/js/dashboard.js"></script>
+<script src="/js/dashboard.js">{{!}}</script>
