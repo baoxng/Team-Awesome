@@ -8,9 +8,9 @@ const postFormHandler = async (event) => {
   
     if (title && date && description) {
       // Send a POST request to the API endpoint
-      const response = await fetch('/api/post/:id', {
+      const response = await fetch('/api/post/', {
         method: 'POST',
-        body: JSON.stringify({ title, date, description }),
+        body: JSON.stringify({ date, title, description, image, user_id}),
         headers: { 'Content-Type': 'application/json' },
       });
   
