@@ -1,3 +1,4 @@
+//Click event to make sure .js and .hdb files are linked correctly
 document.querySelector('#entryBtn').onclick = function() {
     console.log("linked correctly to hdb");
 }
