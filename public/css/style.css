@@ -180,12 +180,12 @@ body {
 #card-header{
 	color: white;
 	background-color: #c2c2c2;
-	margin: 10px;
+	margin: 5px;
 	border-radius: 6px;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 23px;
 }
 .btnPrimary{
 	color: white;
