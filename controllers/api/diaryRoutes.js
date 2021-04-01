@@ -109,7 +109,7 @@ router.get('/:id', withAuth, async (req, res) => {
       include: [{ model: Post }],
     });
     
-    console.log(userData.dataValues.posts);
+    console.log(postData.dataValues.posts);
     res.render('dashboard', {
       ...post,
       logged_in: true

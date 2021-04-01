@@ -2,15 +2,15 @@ const postFormHandler = async (event) => {
     event.preventDefault();
   
     // Collect values from the new diary entry form
-    const postName = document.querySelector('#post-email').value.trim();
-    const postDate = document.querySelector('#post-date').value.trim();
-    const postDescription = document.querySelector('#post-description').value.trim();
+    const title = document.querySelector('#post-email').value.trim();
+    const date = document.querySelector('#post-date').value.trim();
+    const description = document.querySelector('#post-description').value.trim();
   
-    if (postName && postDate && postDescription) {
+    if (title && date && description) {
       // Send a POST request to the API endpoint
-      const response = await fetch('/', {
+      const response = await fetch('/api/post/:id', {
         method: 'POST',
-        body: JSON.stringify({ postName, postDate, postDescription }),
+        body: JSON.stringify({ title, date, description }),
         headers: { 'Content-Type': 'application/json' },
       });
   
