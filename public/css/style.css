@@ -188,10 +188,10 @@ body {
 	font-size: 30px;
 }
 .btnPrimary{
+	color: white;
 	background-color: #4496bc;
 	border: none;
 	border-radius: 6px;
-	color: white;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -239,7 +239,9 @@ body {
     margin: 20px;
     padding: 10px;
 }
-
+#back-to-diary{
+	color: white;
+}
 .posts-page-footer {
     float: right;
     margin-right: 20px;

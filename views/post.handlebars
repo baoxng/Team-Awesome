@@ -9,7 +9,7 @@
             </button>
             <p id="inspo" class="animate__animated animate__fadeInDown animate__slower">
                 "Always believe something wonderful is about to happen"
-          </p>
+            </p>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item active">
@@ -34,7 +34,7 @@
         </div>
         <div class="col-2">
             <h2 id="animate-header" class="formHeader animate__animated animate__fadeInLeftBig animate__slower">
-            hello again {{userName}}
+                hello again {{userName}}
             </h2>
         </div>
     </div>
@@ -45,10 +45,12 @@
         <div class="col-lg-9">
             <div class="single-entry" style="display: block">
                 <h2>{{title}}</h2>
-                <small><b>{{date}}</b></small><br>
-                <br>
+                <hr class="bg-lighter">
+                <p><b>{{date}}</b></p>
+                <hr class="bg-lighter">
                 <p class="card-text post-card-text"> {{description}}</p>
-                <h3><a href="/api/users/dashboard" class="loginLink">Back to Diary</a></h3>
+                <hr class="bg-lighter">
+                <button id="entryBtn" type="submit"><a href="/api/users/dashboard">Back to Diary</a></button>
             </div>
         </div>
     </div>
