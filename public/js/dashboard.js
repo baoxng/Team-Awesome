@@ -1,3 +1,7 @@
+document.querySelector('#post-form').onclick = function() {
+    console.log("linked");
+}
+
 const postFormHandler = async (event) => {
     event.preventDefault();
   
