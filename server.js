@@ -5,11 +5,13 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const compression= require('compression')
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 //App and Port
 const app = express();
+app.use(compression())
 const PORT = process.env.PORT || 3030;
 
 //Creating our express handlebars
